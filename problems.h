@@ -19,7 +19,7 @@ int ceilingFunction(float a){
 }
 
 // Problem 2
-void swap_values(float &a, float &b) {
+void swap_values(float a, float b) {
     // Swap using addition and subtraction
     a = a + b;
     b = a - b; 

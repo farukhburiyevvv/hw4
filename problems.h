@@ -13,8 +13,8 @@ int ceilingFunction(float a){
 }
 
 // Problem 2
-template<typename T>
-void swap_values(T& x, T& y) {
+
+void swap_values(float x, float y) {
     T temp = x;
     x=y;
     y=temp;

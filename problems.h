@@ -49,11 +49,8 @@ int decimalToBinary(int n) {
 
 // Problem 6
 
-//midValue
-template <typename T> T midValue (T a, T b,T c) {
-    if((a>b && b>c)  (c>b && b>a)) {
-        return b;
-    } //if((a>c && c>b)  (b>c && c>a)) { return c;}
-    if((b>a and a>c)  (a>b && a<c)) { return a;}
-    return c;
-}
+int midValue(int n1, int n2, int n3){
+    if(n1>=n2 && n1<=n3) return n1;
+    else if(n2>=n1 && n2<=n3) return n2;
+    return n3;
+} 

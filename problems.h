@@ -1,4 +1,4 @@
-
+#include <bits/stdc++.h>
 //In the comments after each problem functions' names are provided. Your task to define correct datatype and parameters.
 //DO NOT CHANGE FUNCTIONS' NAMES.
 //You may check your functions in main.cpp as shown by exampleFunction;
@@ -19,11 +19,11 @@ int ceilingFunction(float a){
 }
 
 // Problem 2
-void swap_values(float a, float b) {
-    // Swap using addition and subtraction
-    a = a + b;
-    b = a - b; 
-    a = a - b; 
+template<typename T>
+void swap_values(T& x, T& y) {
+    T temp = x;
+    x=y;
+    y=temp;
 }
 // Problem 3
 int multiply(int a, int b) {
@@ -54,8 +54,10 @@ int decimalToBinary(int n) {
 }
 
 // Problem 6
-int midValue(int n1, int n2, int n3){
-    if(n1>n2 && n1<n3) return n1;
-    else if(n2>n1 && n2<n3) return n2;
-    return n3;
+template <typename T> T midValue (T a, T b,T c) {
+    if((a>b && b>c)  (c>b && b>a)) {
+        return b;
+    } //if((a>c && c>b)  (b>c && c>a)) { return c;}
+    if((b>a and a>c)  (a>b && a<c)) { return a;}
+    return c;
 }

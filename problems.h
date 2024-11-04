@@ -49,13 +49,15 @@ int digitSum(int a) {
 }
 
 // Problem 5
-void decimalToBinary(int n) {
-    if(n<=0){
-        return ;
+int decimalToBinary(int n) {
+    if (n <= 0) {
+        return 0; 
     }
-    decimalToBinary(n / 2);
-    cout << (n % 2);
-   }
+    int binary = decimalToBinary(n / 2);
+    
+    int digits = (int)log10(binary) + 1;
+    return binary * 10 + (n % 2);
+}
 
 // Problem 6
 template <typename T>

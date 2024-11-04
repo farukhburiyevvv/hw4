@@ -8,11 +8,15 @@ void exampleFunction() {
 
 // Problem 1
 int floorFunction(float a){
-  return floor(a);
+  return a;
 }
 
 int ceilingFunction(float a){
-  return ceil(a);
+    int x = int (a);
+    if(x-a==0){
+        return a;
+    }
+    return a+1;
 }
 
 // Problem 2

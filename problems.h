@@ -54,8 +54,7 @@ int decimalToBinary(int n) {
 }
 
 // Problem 6
-template <typename T>
-T midValue(T n1, T n2, T n3){
+int midValue(int n1, int n2, int n3){
     if(n1>=n2 && n1<=n3) return n1;
     else if(n2>=n1 && n2<=n3) return n2;
     return n3;

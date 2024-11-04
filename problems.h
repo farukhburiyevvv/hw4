@@ -19,7 +19,7 @@ int ceilingFunction(float a){
 }
 
 // Problem 2
-void swap_values(float a,float b){
+void swap_values(float &a,float &b){
     // cout<<"a= "<<a<<" b= "<<b<<endl;    
     a=a*b;     
     b=a/b;     

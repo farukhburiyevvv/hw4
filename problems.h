@@ -5,6 +5,7 @@ void exampleFunction() {
     std::cout<<"Example Function that can be called in main."<<std::endl;
 }
 // Problem 1
+// Problem 1
 int floorFunction(float a){
   return a;
 }
@@ -19,16 +20,10 @@ int ceilingFunction(float a){
 
 // Problem 2
 void swap_values(float a,float b){
-    // cout<<"a= "<<a<<" b= "<<b<<endl;    
     a=a*b;     
     b=a/b;     
     a=a/b;   
-   
-void swap_values(float &a, float &b) {
-    // Swap using addition and subtraction
-    a = a + b;
-    b = a - b; 
-    a = a - b; 
+      
 }
 // Problem 3
 int multiply(int a, int b) {
@@ -50,6 +45,10 @@ int digitSum(int a) {
     }
     return 0;
 }
+
+// Problem 5
+
+
 
 // Problem 5
 int decimalToBinary(int n) {

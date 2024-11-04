@@ -5,7 +5,6 @@
 void exampleFunction() {
     std::cout<<"Example Function that can be called in main."<<std::endl;
 }
-
 // Problem 1
 int floorFunction(float a){
   return a;
@@ -50,12 +49,8 @@ int digitSum(int a) {
 
 // Problem 5
 int decimalToBinary(int n) {
-    if (n <= 0) {
-        return 0; 
-    }
+    if (n <= 0) return 0; 
     int binary = decimalToBinary(n / 2);
-    
-    int digits = (int)log10(binary) + 1;
     return binary * 10 + (n % 2);
 }
 

@@ -24,7 +24,7 @@ void swap_values(float a,float b){
     a=a*b;     
     b=a/b;     
     a=a/b;   
-    cout<<"a= "<<a<<" b= "<<b<<endl;   
+    cout<<"a="<<a<<endl<<"b="<<b<<endl;   
 }
 // Problem 3
 int multiply(int a, int b) {

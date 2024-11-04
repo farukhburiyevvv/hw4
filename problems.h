@@ -19,10 +19,11 @@ int ceilingFunction(float a){
 }
 
 // Problem 2
-void swap_values(float a,float b){
-    a=a*b;     
-    b=a/b;     
-    a=a/b;   
+template <typename T>
+void swap_values(T& x, T& y){
+    a=a+b;
+    b=a-b;
+    a=a-b;
       
 }
 // Problem 3
@@ -58,9 +59,8 @@ int decimalToBinary(int n) {
 }
 
 // Problem 6
-
-int (int n1, int n2, int n3){
-    if(n1==n2==n3) return n1;
+template <typename T>
+T midValue(T n1, T n2, T n3){
     if(n1>=n2 && n1<=n3) return n1;
     else if(n2>=n1 && n2<=n3) return n2;
     return n3;
